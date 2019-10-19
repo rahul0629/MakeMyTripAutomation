@@ -27,8 +27,13 @@ public class RegressionTest extends BaseClass {
 	
 	
 	@AfterMethod
-	public void tearDown()
+	public void tearDown() throws Exception
 	{
+		if(d==null)
+		{
+			intializeDriver();
+		}
+			
 		d.quit();
 	}
 

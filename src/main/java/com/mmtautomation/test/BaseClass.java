@@ -27,12 +27,12 @@ public class BaseClass {
 		
 		System.out.println("Driver Intialization");
 		Configprop=new Properties();
-		FileInputStream fisCon=new FileInputStream("C:/Users/rahul/MMTProj/TestData.properties");
+		FileInputStream fisCon=new FileInputStream("C:/Users/rahul/MakeMyTripAutomation/TestData.properties");
 		Configprop.load(fisCon);
 		
 		
 		Elmtprop=new Properties();
-		FileInputStream fisElm=new FileInputStream("C:/Users/rahul/MMTProj/ElementDetails.properties");
+		FileInputStream fisElm=new FileInputStream("C:/Users/rahul/MakeMyTripAutomation/ElementDetails.properties");
 		Elmtprop.load(fisElm);
 
 
@@ -85,13 +85,6 @@ public class BaseClass {
 		}
 		
 	}
-
-
-	
-
-
-
-
 
 
 }
