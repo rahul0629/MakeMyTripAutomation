@@ -14,12 +14,14 @@ public class RegressionTest extends BaseClass {
 	public void FindFlightTest() throws Exception
 	{
 		
+		System.out.println("This is find flight Test");
 		intializeDriver();
 		
 		if(!login)
 		{
 			login();
 			login=true;
+			System.out.println("Login is successfull");
 		}
 		Flp.findFlight();
 		
